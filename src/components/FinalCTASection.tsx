@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-paodemel.jpg";
+import ctaBackground from "@/assets/cta-background.jpg";
 
 const FinalCTASection = () => (
   <section className="py-16 md:py-28 relative overflow-hidden">
     {/* Background image with overlay */}
-    <div
-      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${heroBackground})` }}
+    <img
+      src={ctaBackground}
+      alt=""
+      className="absolute inset-0 w-full h-full object-cover"
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/80 via-chocolate-dark/60 to-chocolate-dark/40 md:via-chocolate-dark/50 md:to-chocolate-dark/30" />
+    <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/70 via-chocolate-dark/50 to-chocolate-dark/30" />
 
     {/* Warm accent glow - hidden on mobile */}
     <div className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-40 bg-honey/20 rounded-full blur-[100px]" />
