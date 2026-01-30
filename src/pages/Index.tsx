@@ -8,7 +8,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import FAQSection from "@/components/FAQSection";
-import heroBackground from "@/assets/hero-main.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 import historiaBackground from "@/assets/historia-background.jpg";
 import produtoKitPresente from "@/assets/produto-kit-presente.png";
 import produtoTorreMel from "@/assets/produto-torre-mel.png";
@@ -162,17 +162,19 @@ const Header = () => {
 
 const HeroSection = () => (
   <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden">
-    {/* Background image - mobile optimized */}
-    <div
-      className="absolute inset-0 bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: `url(${heroBackground})`,
-        backgroundPosition: 'center center'
-      }}
-    />
+    {/* Background video - muted, autoplay, loop */}
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src={heroVideo} type="video/mp4" />
+    </video>
 
-    {/* Gradient overlay - stronger on mobile for readability */}
-    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/70 via-chocolate-dark/50 to-chocolate-dark/30 md:from-chocolate-dark/60 md:via-chocolate-dark/40 md:to-chocolate-dark/20" />
+    {/* Gradient overlay - for text readability */}
+    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/60 via-chocolate-dark/40 to-chocolate-dark/20 md:from-chocolate-dark/50 md:via-chocolate-dark/30 md:to-chocolate-dark/15" />
 
     {/* Content */}
     <div className="container mx-auto px-5 md:px-6 relative z-10 pt-16 md:pt-20 pb-8">
