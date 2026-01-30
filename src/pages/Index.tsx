@@ -172,7 +172,7 @@ const HeroSection = () => (
     />
 
     {/* Gradient overlay - stronger on mobile for readability */}
-    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/95 via-chocolate-dark/85 to-chocolate-dark/70 md:from-chocolate-dark/90 md:via-chocolate-dark/70 md:to-chocolate-dark/30" />
+    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/70 via-chocolate-dark/50 to-chocolate-dark/30 md:from-chocolate-dark/60 md:via-chocolate-dark/40 md:to-chocolate-dark/20" />
 
     {/* Content */}
     <div className="container mx-auto px-5 md:px-6 relative z-10 pt-16 md:pt-20 pb-8">
