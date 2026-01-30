@@ -78,30 +78,50 @@ export const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Hero Image */}
+          {/* Decorative Script Logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:flex justify-center items-center"
+            className="hidden lg:flex flex-col justify-center items-center"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-secondary/20 rounded-full blur-3xl scale-110" />
-              <img
-                src={heroBg}
-                alt="Pão de mel premium"
-                className="relative w-[500px] h-[500px] object-cover rounded-full shadow-elevated"
-              />
-              {/* Floating Badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
+            <div className="relative text-center">
+              {/* Main Script Logo */}
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
-                className="absolute -bottom-4 -right-4 bg-card rounded-2xl p-4 shadow-elevated"
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="font-script text-[120px] xl:text-[140px] leading-none text-chocolate-light tracking-wide"
+                style={{ fontFamily: "'Kaushan Script', cursive" }}
               >
-                <p className="font-display text-lg text-foreground">Desde 2021</p>
-                <p className="text-muted-foreground text-sm">+40 mil unidades vendidas</p>
+                Melamô
+              </motion.h2>
+              
+              {/* Subtitle Badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                className="mt-4 flex items-center justify-center gap-4"
+              >
+                <span className="h-px w-12 bg-primary-foreground/30" />
+                <span 
+                  className="text-primary-foreground/90 text-lg tracking-[0.3em] uppercase font-medium"
+                >
+                  Pão de Mel
+                </span>
+                <span className="h-px w-12 bg-primary-foreground/30" />
               </motion.div>
+
+              {/* Since Badge */}
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+                className="mt-4 text-primary-foreground/70 text-sm tracking-widest"
+              >
+                — desde 2021 —
+              </motion.p>
             </div>
           </motion.div>
         </div>
