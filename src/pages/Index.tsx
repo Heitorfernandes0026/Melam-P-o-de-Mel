@@ -10,6 +10,7 @@ import FinalCTASection from "@/components/FinalCTASection";
 import FAQSection from "@/components/FAQSection";
 import heroBackground from "@/assets/hero-background-new.jpeg";
 import historiaBackground from "@/assets/historia-background.jpg";
+import logoMelamoHero from "@/assets/logo-melamo-hero.jpeg";
 import produtoKitPresente from "@/assets/produto-kit-presente.png";
 import produtoTorreMel from "@/assets/produto-torre-mel.png";
 import produtoClassico from "@/assets/produto-classico.png";
@@ -182,15 +183,15 @@ const HeroSection = () => (
         transition={{ duration: 1, delay: 0.3 }}
         className="max-w-2xl"
       >
-        {/* Logo text - apenas visual */}
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+        {/* Logo da marca */}
+        <motion.img
+          src={logoMelamoHero}
+          alt="Melamô - Pão de Mel desde 2021"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-block text-3xl md:text-5xl font-script text-honey mb-4 md:mb-6"
-        >
-          Melamô
-        </motion.span>
+          className="w-48 md:w-64 lg:w-72 h-auto mb-4 md:mb-6"
+        />
 
         {/* Headline principal - optimized line breaks for mobile */}
         <motion.h1
