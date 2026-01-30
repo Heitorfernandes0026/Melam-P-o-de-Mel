@@ -1,23 +1,16 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, ArrowRight } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
+import logoMelamo from '@/assets/logo-melamo.png';
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroBg}
-          alt="Pão de mel artesanal"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/70" />
-      </div>
+    <section className="relative min-h-screen flex items-center bg-hero overflow-hidden">
+      {/* Background - Warm Beige */}
+      <div className="absolute inset-0 z-0 bg-hero" />
 
       {/* Decorative Elements */}
-      <div className="absolute top-1/4 right-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-10 w-64 h-64 bg-chocolate/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-chocolate/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center py-24 lg:py-0">
@@ -28,20 +21,11 @@ export const Hero = () => {
             transition={{ duration: 0.8 }}
             className="max-w-xl"
           >
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-block font-display text-xl sm:text-2xl text-secondary mb-4"
-            >
-              Melamô
-            </motion.span>
-
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="font-display text-4xl sm:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-6"
+              className="font-display text-4xl sm:text-5xl lg:text-6xl text-chocolate leading-tight mb-6"
             >
               O pão de mel artesanal que faz você se apaixonar{' '}
               <span className="text-gradient-honey">sabor premium a cada mordida</span>
@@ -51,7 +35,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-primary-foreground/80 text-lg sm:text-xl mb-8"
+              className="text-chocolate/80 text-lg sm:text-xl mb-8"
             >
               Feito à mão desde 2021, com ingredientes selecionados e sabor premium.
             </motion.p>
@@ -72,13 +56,13 @@ export const Hero = () => {
                 Pedir agora no WhatsApp
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="#produtos" className="btn-outline-cream text-lg">
+              <a href="#produtos" className="btn-outline-chocolate text-lg">
                 Ver Sabores
               </a>
             </motion.div>
           </motion.div>
 
-          {/* Decorative Script Logo */}
+          {/* Logo Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -86,31 +70,30 @@ export const Hero = () => {
             className="hidden lg:flex flex-col justify-center items-center"
           >
             <div className="relative text-center">
-              {/* Main Script Logo */}
-              <motion.h2
+              {/* Main Logo Image */}
+              <motion.img
+                src={logoMelamo}
+                alt="Melamô - Pão de Mel Artesanal"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
-                className="font-script text-[120px] xl:text-[140px] leading-none text-chocolate-light tracking-wide"
-                style={{ fontFamily: "'Kaushan Script', cursive" }}
-              >
-                Melamô
-              </motion.h2>
+                className="w-[400px] xl:w-[500px] h-auto"
+              />
               
               {/* Subtitle Badge */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="mt-4 flex items-center justify-center gap-4"
+                className="mt-6 flex items-center justify-center gap-4"
               >
-                <span className="h-px w-12 bg-primary-foreground/30" />
+                <span className="h-px w-12 bg-chocolate/30" />
                 <span 
-                  className="text-primary-foreground/90 text-lg tracking-[0.3em] uppercase font-medium"
+                  className="text-chocolate/90 text-lg tracking-[0.3em] uppercase font-medium"
                 >
                   Pão de Mel
                 </span>
-                <span className="h-px w-12 bg-primary-foreground/30" />
+                <span className="h-px w-12 bg-chocolate/30" />
               </motion.div>
 
               {/* Since Badge */}
@@ -118,7 +101,7 @@ export const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
-                className="mt-4 text-primary-foreground/70 text-sm tracking-widest"
+                className="mt-4 text-chocolate/70 text-sm tracking-widest"
               >
                 — desde 2021 —
               </motion.p>
