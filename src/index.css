@@ -1,118 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Melamô Premium Design System
-   Cores quentes inspiradas em chocolate, mel e artesanato premium
-*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&family=Pacifico&family=Great+Vibes&display=swap');
 
 @layer base {
   :root {
-    /* Cores principais - Chocolate & Mel */
-    --background: 40 33% 97%;
-    --foreground: 25 45% 15%;
+    /* Melamo - Paleta inspirada em chocolate, mel e elegância artesanal */
+    --background: 35 25% 97%;
+    --foreground: 25 35% 18%;
 
-    --card: 40 40% 99%;
-    --card-foreground: 25 45% 15%;
+    --card: 35 30% 95%;
+    --card-foreground: 25 35% 18%;
 
-    --popover: 40 40% 99%;
-    --popover-foreground: 25 45% 15%;
+    --popover: 35 25% 97%;
+    --popover-foreground: 25 35% 18%;
 
-    /* Chocolate escuro */
-    --primary: 25 50% 22%;
-    --primary-foreground: 40 40% 98%;
+    /* Marrom chocolate rico */
+    --primary: 25 45% 25%;
+    --primary-foreground: 35 30% 95%;
 
-    /* Mel dourado */
-    --secondary: 40 80% 55%;
-    --secondary-foreground: 25 50% 15%;
+    /* Dourado mel */
+    --secondary: 40 75% 55%;
+    --secondary-foreground: 25 45% 18%;
 
-    /* Creme suave */
-    --muted: 40 30% 94%;
+    /* Nude elegante */
+    --muted: 30 20% 90%;
     --muted-foreground: 25 20% 45%;
 
-    /* Dourado accent */
-    --accent: 40 85% 50%;
-    --accent-foreground: 25 50% 15%;
+    /* Terracota suave */
+    --accent: 18 55% 60%;
+    --accent-foreground: 35 30% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 40% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 40 30% 88%;
-    --input: 40 30% 88%;
-    --ring: 40 80% 55%;
+    --border: 30 25% 85%;
+    --input: 30 25% 85%;
+    --ring: 40 75% 55%;
 
     --radius: 0.75rem;
 
-    /* Custom premium tokens */
+    /* Custom Melamo tokens */
+    --chocolate-dark: 20 50% 15%;
+    --chocolate-medium: 25 45% 25%;
+    --chocolate-light: 25 35% 35%;
     --honey: 40 85% 50%;
-    --honey-light: 42 90% 65%;
-    --chocolate: 25 50% 22%;
-    --chocolate-light: 25 40% 35%;
-    --cream: 40 33% 97%;
-    --cream-dark: 40 25% 92%;
-    
-    /* Hero beige from logo */
-    --hero: 30 30% 82%;
-    
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(30 30% 82%) 0%, hsl(30 25% 78%) 100%);
-    --gradient-honey: linear-gradient(135deg, hsl(40 85% 50%) 0%, hsl(42 90% 60%) 100%);
-    --gradient-warm: linear-gradient(180deg, hsl(40 33% 97%) 0%, hsl(40 25% 92%) 100%);
-    
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(25 50% 22% / 0.15);
-    --shadow-card: 0 8px 30px -8px hsl(25 50% 22% / 0.12);
-    --shadow-elevated: 0 20px 50px -15px hsl(25 50% 22% / 0.2);
-    --shadow-glow: 0 0 40px hsl(40 85% 50% / 0.3);
+    --honey-light: 42 80% 65%;
+    --honey-glow: 38 90% 55%;
+    --cream: 35 40% 94%;
+    --cream-dark: 32 30% 88%;
+    --terracotta: 18 55% 55%;
+    --terracotta-light: 20 45% 70%;
 
-    --sidebar-background: 40 33% 97%;
-    --sidebar-foreground: 25 45% 15%;
-    --sidebar-primary: 25 50% 22%;
-    --sidebar-primary-foreground: 40 40% 98%;
-    --sidebar-accent: 40 30% 94%;
-    --sidebar-accent-foreground: 25 50% 22%;
-    --sidebar-border: 40 30% 88%;
-    --sidebar-ring: 40 80% 55%;
+    /* Gradients */
+    --gradient-honey: linear-gradient(135deg, hsl(40 85% 50%), hsl(42 80% 65%));
+    --gradient-chocolate: linear-gradient(180deg, hsl(25 45% 25%), hsl(20 50% 15%));
+    --gradient-warm: linear-gradient(135deg, hsl(35 40% 94%), hsl(32 30% 88%));
+    --gradient-hero: linear-gradient(180deg, hsl(35 25% 97%) 0%, hsl(35 40% 94%) 50%, hsl(32 30% 88%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 45% 25% / 0.12);
+    --shadow-honey: 0 8px 30px -8px hsl(40 85% 50% / 0.3);
+    --shadow-card: 0 10px 40px -10px hsl(25 45% 25% / 0.15);
+
+    --sidebar-background: 35 30% 95%;
+    --sidebar-foreground: 25 35% 18%;
+    --sidebar-primary: 25 45% 25%;
+    --sidebar-primary-foreground: 35 30% 95%;
+    --sidebar-accent: 40 75% 55%;
+    --sidebar-accent-foreground: 25 45% 18%;
+    --sidebar-border: 30 25% 85%;
+    --sidebar-ring: 40 75% 55%;
   }
 
   .dark {
-    --background: 25 40% 8%;
-    --foreground: 40 30% 95%;
+    --background: 20 35% 8%;
+    --foreground: 35 30% 92%;
 
-    --card: 25 35% 12%;
-    --card-foreground: 40 30% 95%;
+    --card: 22 30% 12%;
+    --card-foreground: 35 30% 92%;
 
-    --popover: 25 35% 12%;
-    --popover-foreground: 40 30% 95%;
+    --popover: 20 35% 8%;
+    --popover-foreground: 35 30% 92%;
 
-    --primary: 40 85% 50%;
-    --primary-foreground: 25 50% 10%;
+    --primary: 40 80% 55%;
+    --primary-foreground: 20 50% 10%;
 
-    --secondary: 25 40% 18%;
-    --secondary-foreground: 40 30% 95%;
+    --secondary: 25 40% 22%;
+    --secondary-foreground: 35 30% 92%;
 
-    --muted: 25 30% 18%;
-    --muted-foreground: 40 20% 65%;
+    --muted: 22 25% 18%;
+    --muted-foreground: 30 20% 60%;
 
-    --accent: 40 80% 55%;
-    --accent-foreground: 25 50% 10%;
+    --accent: 18 50% 50%;
+    --accent-foreground: 35 30% 95%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 40 30% 95%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 25 30% 20%;
-    --input: 25 30% 20%;
+    --border: 22 25% 20%;
+    --input: 22 25% 20%;
     --ring: 40 80% 55%;
 
-    --sidebar-background: 25 40% 8%;
-    --sidebar-foreground: 40 30% 95%;
-    --sidebar-primary: 40 85% 50%;
-    --sidebar-primary-foreground: 25 50% 10%;
-    --sidebar-accent: 25 30% 18%;
-    --sidebar-accent-foreground: 40 30% 95%;
-    --sidebar-border: 25 30% 20%;
+    --sidebar-background: 22 30% 10%;
+    --sidebar-foreground: 35 30% 92%;
+    --sidebar-primary: 40 80% 55%;
+    --sidebar-primary-foreground: 20 50% 10%;
+    --sidebar-accent: 22 25% 18%;
+    --sidebar-accent-foreground: 35 30% 92%;
+    --sidebar-border: 22 25% 18%;
     --sidebar-ring: 40 80% 55%;
   }
 }
@@ -122,88 +119,167 @@
     @apply border-border;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    @apply font-semibold tracking-tight;
   }
 }
 
-@layer components {
-  .text-gradient-honey {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(40 85% 50%) 0%, hsl(42 90% 65%) 100%);
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
   }
 
-  .bg-gradient-hero {
-    background: linear-gradient(135deg, hsl(25 50% 22%) 0%, hsl(25 45% 30%) 100%);
+  .font-body {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .font-script {
+    font-family: 'Great Vibes', cursive;
+  }
+
+  .font-handwritten {
+    font-family: 'Pacifico', cursive;
+  }
+
+  .text-gradient-honey {
+    background: linear-gradient(135deg, hsl(40 85% 50%), hsl(42 80% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .bg-gradient-honey {
-    background: linear-gradient(135deg, hsl(40 85% 50%) 0%, hsl(42 90% 60%) 100%);
+    background: linear-gradient(135deg, hsl(40 85% 50%), hsl(42 80% 65%));
+  }
+
+  .bg-gradient-chocolate {
+    background: linear-gradient(180deg, hsl(25 45% 25%), hsl(20 50% 15%));
   }
 
   .bg-gradient-warm {
-    background: linear-gradient(180deg, hsl(40 33% 97%) 0%, hsl(40 25% 92%) 100%);
+    background: linear-gradient(135deg, hsl(35 40% 94%), hsl(32 30% 88%));
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(180deg, hsl(35 25% 97%) 0%, hsl(35 40% 94%) 50%, hsl(32 30% 88%) 100%);
   }
 
   .shadow-soft {
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 4px 20px -4px hsl(25 45% 25% / 0.12);
+  }
+
+  .shadow-honey {
+    box-shadow: 0 8px 30px -8px hsl(40 85% 50% / 0.3);
   }
 
   .shadow-card {
-    box-shadow: var(--shadow-card);
+    box-shadow: 0 10px 40px -10px hsl(25 45% 25% / 0.15);
   }
 
-  .shadow-elevated {
-    box-shadow: var(--shadow-elevated);
+  /* Color utility classes */
+  .bg-chocolate-dark {
+    background-color: hsl(20 50% 15%);
   }
 
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
+  .text-chocolate-dark {
+    color: hsl(20 50% 15%);
   }
 
-  .btn-whatsapp {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300;
-    background: linear-gradient(135deg, hsl(40 85% 50%) 0%, hsl(42 90% 60%) 100%);
-    color: hsl(25 50% 15%);
+  .bg-cream {
+    background-color: hsl(35 40% 94%);
   }
 
-  .btn-whatsapp:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px -5px hsl(40 85% 50% / 0.4);
+  .text-cream {
+    color: hsl(35 40% 94%);
   }
 
-  .btn-outline-cream {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300;
-    background: transparent;
-    border: 2px solid hsl(40 30% 90%);
-    color: hsl(40 30% 90%);
+  .bg-honey {
+    background-color: hsl(40 85% 50%);
   }
 
-  .btn-outline-cream:hover {
-    background: hsl(40 30% 90% / 0.1);
+  .text-honey {
+    color: hsl(40 85% 50%);
   }
 
-  .btn-outline-chocolate {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300;
-    background: transparent;
-    border: 2px solid hsl(25 50% 22%);
-    color: hsl(25 50% 22%);
+  .border-honey {
+    border-color: hsl(40 85% 50%);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile viewport height fix */
+@supports (height: 100svh) {
+  .min-h-screen {
+    min-height: 100svh;
+  }
+}
+
+/* Hide scrollbar for horizontal scroll elements */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar - desktop only */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
   }
 
-  .btn-outline-chocolate:hover {
-    background: hsl(25 50% 22% / 0.1);
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
   }
 
-  .bg-hero {
-    background: hsl(30 30% 82%);
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }
+}
+
+/* Mobile touch improvements */
+@media (max-width: 767px) {
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Improve touch targets */
+  .min-h-\[52px\] {
+    min-height: 52px;
+  }
+}
+
+/* Performance optimizations */
+.blur-3xl, .blur-\[100px\], .blur-\[120px\] {
+  will-change: transform;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }
