@@ -8,7 +8,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import FAQSection from "@/components/FAQSection";
-import heroBackground from "@/assets/hero-background-new.jpeg";
+import heroBackground from "@/assets/hero-main.jpg";
 import historiaBackground from "@/assets/historia-background.jpg";
 import produtoKitPresente from "@/assets/produto-kit-presente.png";
 import produtoTorreMel from "@/assets/produto-torre-mel.png";
