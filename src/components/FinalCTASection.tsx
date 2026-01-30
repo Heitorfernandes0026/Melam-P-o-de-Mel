@@ -10,7 +10,7 @@ const FinalCTASection = () => (
       className="absolute inset-0 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBackground})` }}
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark via-chocolate-dark/90 to-chocolate-dark/80 md:via-chocolate-dark/85 md:to-chocolate-dark/70" />
+    <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/80 via-chocolate-dark/60 to-chocolate-dark/40 md:via-chocolate-dark/50 md:to-chocolate-dark/30" />
 
     {/* Warm accent glow - hidden on mobile */}
     <div className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-40 bg-honey/20 rounded-full blur-[100px]" />
