@@ -9,7 +9,7 @@ const catalogs = [
     title: "Catálogo Corporativo",
     image: catalogoCorporativo,
     buttonLabel: "Ver Catálogo Corporativo",
-    href: "#",
+    href: "/catalogos/catalogo-corporativo.pdf",
   },
   {
     title: "Catálogo Tradicional",
