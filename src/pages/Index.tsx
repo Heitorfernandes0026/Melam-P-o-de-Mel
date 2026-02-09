@@ -192,9 +192,9 @@ const HeroSection = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative inline-block mb-4 md:mb-6"
         >
-          <div className="rounded-2xl md:rounded-3xl p-4 md:p-6 backdrop-blur-md"
+          <div className="p-4 md:p-6 backdrop-blur-md"
             style={{
-              background: 'radial-gradient(ellipse 70% 70% at center, rgba(255,255,255,0.65) 25%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 70%)',
+              background: 'radial-gradient(ellipse 65% 65% at center, rgba(255,255,255,0.6) 20%, rgba(255,255,255,0.1) 45%, rgba(255,255,255,0) 65%)',
             }}
           >
             <img
