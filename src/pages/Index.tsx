@@ -9,6 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import FAQSection from "@/components/FAQSection";
 import heroVideo from "@/assets/hero-video.mp4";
+import logoMelamo from "@/assets/logo-melamo.png";
 import historiaBackground from "@/assets/historia-background.jpg";
 import produtoKitPresente from "@/assets/produto-kit-presente.png";
 import produtoTorreMel from "@/assets/produto-torre-mel.png";
@@ -184,15 +185,15 @@ const HeroSection = () => (
         transition={{ duration: 1, delay: 0.3 }}
         className="max-w-2xl"
       >
-        {/* Logo text - apenas visual */}
-        <motion.span
+        {/* Logo image */}
+        <motion.img
+          src={logoMelamo}
+          alt="Melamô"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-block text-3xl md:text-5xl font-script text-honey mb-4 md:mb-6"
-        >
-          Melamô
-        </motion.span>
+          className="h-16 md:h-24 w-auto mb-4 md:mb-6"
+        />
 
         {/* Headline principal - optimized line breaks for mobile */}
         <motion.h1
