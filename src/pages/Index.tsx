@@ -162,7 +162,7 @@ const Header = () => {
 };
 
 const HeroSection = () => (
-  <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden">
+  <section className="relative h-[100svh] flex items-end overflow-hidden">
     {/* Background video - muted, autoplay, loop */}
     <video
       autoPlay
@@ -175,22 +175,22 @@ const HeroSection = () => (
     </video>
 
     {/* Gradient overlay - for text readability */}
-    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/60 via-chocolate-dark/40 to-chocolate-dark/20 md:from-chocolate-dark/50 md:via-chocolate-dark/30 md:to-chocolate-dark/15" />
+    <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/80 via-chocolate-dark/40 to-chocolate-dark/10 md:bg-gradient-to-t md:from-chocolate-dark/75 md:via-chocolate-dark/35 md:to-chocolate-dark/10" />
 
     {/* Content */}
-    <div className="container mx-auto px-5 md:px-6 relative z-10 pt-24 md:pt-28 pb-8">
+    <div className="container mx-auto px-5 md:px-6 relative z-10 pb-20 md:pb-28">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
         className="max-w-2xl"
       >
-        {/* Logo image with white background and gradient edges */}
+        {/* Logo image */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative inline-block mb-4 md:mb-6"
+          className="relative inline-block mb-4 md:mb-5"
         >
           <div className="p-4 md:p-6"
             style={{
@@ -204,48 +204,48 @@ const HeroSection = () => (
             <img
               src={logoMelamo}
               alt="Melamô"
-              className="h-32 md:h-48 lg:h-56 w-auto"
+              className="h-28 md:h-44 lg:h-52 w-auto"
             />
           </div>
         </motion.div>
 
-        {/* Headline principal - optimized line breaks for mobile */}
+        {/* Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-[2rem] leading-[1.2] md:text-5xl lg:text-7xl font-display font-bold text-cream md:leading-tight mb-4 md:mb-6"
+          className="text-[1.75rem] leading-[1.15] md:text-4xl lg:text-6xl font-display font-bold text-cream md:leading-tight mb-3 md:mb-5"
         >
           O pão de mel artesanal
           <span className="block">que faz você se apaixonar</span>
           <span className="text-gradient-honey">sabor premium a cada mordida</span>
         </motion.h1>
 
-        {/* Subheadline - smaller on mobile */}
+        {/* Subheadline */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-base md:text-xl text-cream/75 max-w-lg mb-6 md:mb-10 font-body leading-relaxed"
+          className="text-sm md:text-lg text-cream/75 max-w-lg mb-5 md:mb-8 font-body leading-relaxed"
         >
           Feito à mão desde 2021, com ingredientes selecionados e sabor premium.
         </motion.p>
 
-        {/* CTA principal - larger touch targets on mobile */}
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex flex-col gap-3 md:flex-row md:gap-4"
+          className="flex flex-col gap-3 sm:flex-row sm:gap-4"
         >
-          <Button variant="hero" size="xl" className="group w-full md:w-auto min-h-[52px] text-base" asChild>
+          <Button variant="hero" size="xl" className="group w-full sm:w-auto min-h-[50px] text-sm md:text-base" asChild>
             <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5" />
               Pedir agora no WhatsApp
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
-          <Button variant="outline" size="xl" className="w-full md:w-auto min-h-[52px] text-base border-cream/40 text-cream hover:bg-cream/10" asChild>
+          <Button variant="outline" size="xl" className="w-full sm:w-auto min-h-[50px] text-sm md:text-base border-cream/40 text-cream hover:bg-cream/10" asChild>
             <a href="#produtos">
               Ver Sabores
             </a>
@@ -254,7 +254,7 @@ const HeroSection = () => (
       </motion.div>
     </div>
 
-    {/* Decorative honey drip - smaller on mobile */}
+    {/* Decorative honey drip */}
     <div className="absolute bottom-0 left-0 right-0">
       <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full md:hidden">
         <path
