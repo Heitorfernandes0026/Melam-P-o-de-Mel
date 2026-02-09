@@ -247,7 +247,7 @@ const HeroSection = () => (
           </Button>
           <Button variant="outline" size="xl" className="w-full sm:w-auto min-h-[50px] text-sm md:text-base border-cream/40 text-cream hover:bg-cream/10" asChild>
             <a href="#produtos">
-              Ver Sabores
+              Catálogos
             </a>
           </Button>
         </motion.div>
