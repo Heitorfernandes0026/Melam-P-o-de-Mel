@@ -78,8 +78,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ["Cormorant Garamond", "serif"],
-        body: ["Nunito", "sans-serif"],
+        display: ["Quicksand", "sans-serif"],
+        body: ["Quicksand", "sans-serif"],
         script: ["Great Vibes", "cursive"],
       },
       borderRadius: {
