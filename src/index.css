@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&family=Pacifico&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
 
 @layer base {
   :root {
@@ -121,22 +121,22 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     @apply font-semibold tracking-tight;
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
   }
 
   .font-body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
   }
 
   .font-script {
