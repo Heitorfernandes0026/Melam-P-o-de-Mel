@@ -192,10 +192,9 @@ const HeroSection = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative inline-block mb-4 md:mb-6"
         >
-          <div className="bg-white rounded-2xl md:rounded-3xl p-4 md:p-6"
+          <div className="rounded-2xl md:rounded-3xl p-4 md:p-6"
             style={{
-              maskImage: 'radial-gradient(ellipse 80% 80% at center, black 40%, transparent 75%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at center, black 40%, transparent 75%)',
+              background: 'radial-gradient(ellipse 70% 70% at center, rgba(255,255,255,0.85) 30%, rgba(255,255,255,0) 70%)',
             }}
           >
             <img
