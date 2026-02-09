@@ -216,8 +216,8 @@ const HeroSection = () => (
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-[1.75rem] leading-[1.15] md:text-4xl lg:text-6xl font-display font-bold text-cream md:leading-tight mb-3 md:mb-5"
         >
-          <span className="text-gradient-honey">Pão de mel é amor</span>
-          <span className="block text-gradient-honey">em forma de doce!</span>
+          <span className="text-gradient-honey" style={{ WebkitTextStroke: '1px rgba(0,0,0,0.3)' }}>Pão de mel é amor</span>
+          <span className="block text-gradient-honey" style={{ WebkitTextStroke: '1px rgba(0,0,0,0.3)' }}>em forma de doce!</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -225,7 +225,7 @@ const HeroSection = () => (
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-sm md:text-lg text-cream/75 max-w-lg mb-5 md:mb-8 font-body leading-relaxed"
+          className="text-sm md:text-lg text-white max-w-lg mb-5 md:mb-8 font-body leading-relaxed font-bold"
         >
           Especialistas em pães de mel artesanais. Desde 2021 levando sabor e carinho 🤎
         </motion.p>
