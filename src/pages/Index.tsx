@@ -216,9 +216,8 @@ const HeroSection = () => (
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-[1.75rem] leading-[1.15] md:text-4xl lg:text-6xl font-display font-bold text-cream md:leading-tight mb-3 md:mb-5"
         >
-          O pão de mel artesanal
-          <span className="block">que faz você se apaixonar</span>
-          <span className="text-gradient-honey">sabor premium a cada mordida</span>
+          Pão de mel é amor
+          <span className="block">em forma de doce!</span>
         </motion.h1>
 
         {/* Subheadline */}
