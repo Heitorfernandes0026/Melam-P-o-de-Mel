@@ -178,7 +178,7 @@ const HeroSection = () => (
     <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/60 via-chocolate-dark/40 to-chocolate-dark/20 md:from-chocolate-dark/50 md:via-chocolate-dark/30 md:to-chocolate-dark/15" />
 
     {/* Content */}
-    <div className="container mx-auto px-5 md:px-6 relative z-10 pt-16 md:pt-20 pb-8">
+    <div className="container mx-auto px-5 md:px-6 relative z-10 pt-24 md:pt-28 pb-8">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
