@@ -8,6 +8,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import FAQSection from "@/components/FAQSection";
+import CatalogSection from "@/components/CatalogSection";
 import heroVideo from "@/assets/hero-video.mp4";
 import logoMelamo from "@/assets/logo-melamo.png";
 import historiaBackground from "@/assets/historia-background.jpg";
@@ -546,6 +547,7 @@ const Index = () => {
       <HeroSection />
       <BenefitsSection />
       <ProductsSection />
+      <CatalogSection />
       <HowItWorksSection />
       <HistorySection />
       <TestimonialsSection />
