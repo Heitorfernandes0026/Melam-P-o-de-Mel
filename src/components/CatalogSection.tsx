@@ -47,12 +47,12 @@ const CatalogSection = () => (
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-honey/10 hover:border-honey/30"
           >
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden aspect-square">
               <img
                 src={catalog.image}
                 alt={catalog.title}
                 loading="lazy"
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="p-4 md:p-6 text-center">
