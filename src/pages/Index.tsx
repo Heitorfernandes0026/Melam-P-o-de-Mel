@@ -185,25 +185,18 @@ const HeroSection = () => (
         transition={{ duration: 1, delay: 0.3 }}
         className="max-w-2xl"
       >
-        {/* Logo image with white background and gradient edges */}
+        {/* Logo with glassmorphism effect */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative inline-block mb-4 md:mb-6"
+          className="inline-block mb-4 md:mb-6 bg-white/15 backdrop-blur-md rounded-2xl md:rounded-3xl p-5 md:p-8 border border-white/20 shadow-2xl"
         >
-          <div className="bg-white rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-lg"
-            style={{
-              maskImage: 'radial-gradient(ellipse 90% 90% at center, black 60%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 90% 90% at center, black 60%, transparent 100%)',
-            }}
-          >
-            <img
-              src={logoMelamo}
-              alt="Melamô"
-              className="h-32 md:h-48 lg:h-56 w-auto"
-            />
-          </div>
+          <img
+            src={logoMelamo}
+            alt="Melamô"
+            className="h-28 md:h-44 lg:h-52 w-auto drop-shadow-lg"
+          />
         </motion.div>
 
         {/* Headline principal - optimized line breaks for mobile */}
