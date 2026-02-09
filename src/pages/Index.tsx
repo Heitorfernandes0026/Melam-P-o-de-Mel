@@ -215,8 +215,8 @@ const HeroSection = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-3xl leading-[1.2] md:text-5xl lg:text-6xl font-bold md:leading-tight mb-3 md:mb-5 italic text-gradient-honey"
-          style={{ fontFamily: "'Playfair Display', serif" }}
+          className="text-3xl leading-[1.2] md:text-5xl lg:text-6xl font-bold md:leading-tight mb-3 md:mb-5 italic"
+          style={{ fontFamily: "'Playfair Display', serif", color: 'hsl(38, 100%, 55%)' }}
         >
           Pão de mel é amor
           <span className="block">em forma de doce!</span>
