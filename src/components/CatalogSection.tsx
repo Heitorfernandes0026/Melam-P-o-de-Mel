@@ -15,7 +15,7 @@ const catalogs = [
     title: "Catálogo Tradicional",
     image: catalogoTradicional,
     buttonLabel: "Ver Catálogo Tradicional",
-    href: "#",
+    href: "/catalogos/catalogo-tradicional.pdf",
   },
 ];
 
