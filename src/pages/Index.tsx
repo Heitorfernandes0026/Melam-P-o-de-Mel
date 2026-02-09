@@ -175,7 +175,7 @@ const HeroSection = () => (
     </video>
 
     {/* Gradient overlay - for text readability */}
-    <div className="absolute inset-0 bg-gradient-to-b from-[hsl(25,40%,25%)]/60 via-[hsl(30,35%,35%)]/40 to-[hsl(35,30%,50%)]/30 backdrop-blur-[2px]" />
+    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/60 via-chocolate-dark/40 to-chocolate-dark/20 md:from-chocolate-dark/50 md:via-chocolate-dark/30 md:to-chocolate-dark/15" />
 
     {/* Content */}
     <div className="container mx-auto px-5 md:px-6 relative z-10 pt-16 md:pt-20 pb-8">
@@ -195,7 +195,7 @@ const HeroSection = () => (
           <img
             src={logoMelamo}
             alt="Melamô"
-            className="h-36 md:h-52 lg:h-64 w-auto drop-shadow-lg mix-blend-multiply"
+            className="h-36 md:h-52 lg:h-64 w-auto drop-shadow-lg"
           />
         </motion.div>
 
