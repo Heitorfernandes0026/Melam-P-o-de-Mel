@@ -216,8 +216,8 @@ const HeroSection = () => (
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-[1.75rem] leading-[1.15] md:text-4xl lg:text-6xl font-display font-bold text-cream md:leading-tight mb-3 md:mb-5"
         >
-          <span className="text-gradient-honey" style={{ WebkitTextStroke: '1px rgba(0,0,0,0.3)' }}>Pão de mel é amor</span>
-          <span className="block text-gradient-honey" style={{ WebkitTextStroke: '1px rgba(0,0,0,0.3)' }}>em forma de doce!</span>
+          <span className="text-gradient-honey" style={{ WebkitTextStroke: '2px rgba(0,0,0,0.4)', fontFamily: 'Calibri, sans-serif' }}>Pão de mel é amor</span>
+          <span className="block text-gradient-honey" style={{ WebkitTextStroke: '2px rgba(0,0,0,0.4)', fontFamily: 'Calibri, sans-serif' }}>em forma de doce!</span>
         </motion.h1>
 
         {/* Subheadline */}
