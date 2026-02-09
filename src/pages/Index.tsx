@@ -194,11 +194,11 @@ const HeroSection = () => (
         >
           <div className="p-4 md:p-6"
             style={{
-              backdropFilter: 'blur(6px)',
-              WebkitBackdropFilter: 'blur(6px)',
-              maskImage: 'radial-gradient(ellipse 70% 70% at center, black 40%, transparent 70%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at center, black 40%, transparent 70%)',
-              background: 'radial-gradient(ellipse 65% 65% at center, rgba(255,255,255,0.45) 25%, rgba(255,255,255,0) 60%)',
+              backdropFilter: 'blur(4px)',
+              WebkitBackdropFilter: 'blur(4px)',
+              maskImage: 'radial-gradient(ellipse 75% 75% at center, black 50%, transparent 75%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 75% 75% at center, black 50%, transparent 75%)',
+              background: 'radial-gradient(ellipse 70% 70% at center, rgba(255,255,255,0.3) 30%, rgba(255,255,255,0) 65%)',
             }}
           >
             <img
