@@ -175,7 +175,8 @@ const HeroSection = () => (
     </video>
 
     {/* Gradient overlay - for text readability */}
-    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/60 via-chocolate-dark/40 to-chocolate-dark/20 md:from-chocolate-dark/50 md:via-chocolate-dark/30 md:to-chocolate-dark/15" />
+    <div className="absolute inset-0 bg-white/10 backdrop-blur-sm" />
+    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-chocolate-dark/50 via-chocolate-dark/30 to-chocolate-dark/15 md:from-chocolate-dark/40 md:via-chocolate-dark/20 md:to-chocolate-dark/10" />
 
     {/* Content */}
     <div className="container mx-auto px-5 md:px-6 relative z-10 pt-16 md:pt-20 pb-8">
