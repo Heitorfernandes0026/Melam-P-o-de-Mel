@@ -85,7 +85,7 @@ const HistoryCarousel = () => {
             <img
               src={slides[currentIndex].image}
               alt={slides[currentIndex].alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/60 via-transparent to-transparent" />
           </motion.div>
