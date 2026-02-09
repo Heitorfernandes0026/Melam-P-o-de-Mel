@@ -227,7 +227,7 @@ const HeroSection = () => (
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-sm md:text-lg text-cream/75 max-w-lg mb-5 md:mb-8 font-body leading-relaxed"
         >
-          Feito à mão desde 2021, com ingredientes selecionados e sabor premium.
+          Especialistas em pães de mel artesanais. Desde 2021 levando sabor e carinho 🤎
         </motion.p>
 
         {/* CTA */}
