@@ -192,7 +192,7 @@ const HeroSection = () => (
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="h-16 md:h-24 w-auto mb-4 md:mb-6"
+          className="h-28 md:h-40 lg:h-48 w-auto mb-4 md:mb-6"
         />
 
         {/* Headline principal - optimized line breaks for mobile */}
