@@ -204,7 +204,7 @@ const HeroSection = () => (
             <img
               src={logoMelamo}
               alt="Melamô"
-              className="h-28 md:h-44 lg:h-52 w-auto"
+              className="h-28 md:h-44 lg:h-52 w-auto object-contain object-bottom"
             />
           </div>
         </motion.div>
