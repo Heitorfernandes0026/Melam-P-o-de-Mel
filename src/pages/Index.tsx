@@ -195,7 +195,7 @@ const HeroSection = () => (
           <img
             src={logoMelamo}
             alt="Melamô"
-            className="h-36 md:h-52 lg:h-64 w-auto drop-shadow-lg"
+            className="h-36 md:h-52 lg:h-64 w-auto drop-shadow-lg mix-blend-multiply"
           />
         </motion.div>
 
