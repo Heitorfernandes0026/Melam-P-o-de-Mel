@@ -210,7 +210,7 @@ const HeroSection = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-[1.75rem] leading-[1.2] md:text-5xl lg:text-6xl font-display font-bold text-cream md:leading-tight mb-4 md:mb-6"
+          className="text-[2rem] leading-[1.2] md:text-5xl lg:text-7xl font-display font-bold text-cream md:leading-tight mb-4 md:mb-6"
         >
           O pão de mel artesanal
           <span className="block">que faz você se apaixonar</span>
