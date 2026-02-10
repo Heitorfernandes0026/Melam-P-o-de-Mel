@@ -389,7 +389,7 @@ const HistorySection = () => (
           ✨ Nossa história
         </span>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-cream">
-          Tradição com <span className="text-gradient-honey">amor</span>
+          Amor em forma de <span className="text-gradient-honey">doce</span>
         </h2>
       </motion.div>
 
@@ -407,7 +407,7 @@ const HistorySection = () => (
               Em 2021, nascemos com um propósito simples: criar momentos doces em meio aos desafios do dia a dia.
             </p>
             <p>
-              De lá para cá, já são mais de <strong className="text-honey">40 mil pãezinhos</strong> entregues, milhares de sorrisos e uma comunidade que cresce junto com a gente.
+              De lá para cá, já são mais de <strong className="text-honey">50 mil pãezinhos</strong> entregues, milhares de sorrisos e uma comunidade que cresce junto com a gente.
             </p>
             <p className="hidden md:block">
               Cada encomenda é preparada com o mesmo carinho do primeiro dia — porque acreditamos que o amor é o ingrediente mais importante.
@@ -430,7 +430,7 @@ const HistorySection = () => (
               </div>
               <div>
                 <h5 className="font-semibold text-cream text-base md:text-lg">Desde 2021</h5>
-                <p className="text-xs md:text-sm text-cream/60">+40 mil unidades</p>
+                <p className="text-xs md:text-sm text-cream/60">+50 mil unidades</p>
               </div>
             </div>
           </div>
