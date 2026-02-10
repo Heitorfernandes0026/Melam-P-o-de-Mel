@@ -21,6 +21,7 @@ import produtoVulcao from "@/assets/produto-vulcao.png";
 
 const navLinks = [
   { href: "#produtos", label: "Produtos" },
+  { href: "#catalogos", label: "Catálogos" },
   { href: "#como-funciona", label: "Como Funciona" },
   { href: "#historia", label: "Nossa História" },
   { href: "#depoimentos", label: "Depoimentos" },
