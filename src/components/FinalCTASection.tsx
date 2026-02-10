@@ -49,7 +49,7 @@ const FinalCTASection = () => (
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <Button variant="hero" size="xl" className="group shadow-2xl w-full sm:w-auto min-h-[56px] text-base" asChild>
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5531993805082" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5" />
               Fazer meu pedido agora
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

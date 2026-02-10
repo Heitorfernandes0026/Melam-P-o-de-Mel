@@ -98,7 +98,7 @@ const FAQSection = () => (
             Fale conosco pelo WhatsApp. Respondemos rápido! 💬
           </p>
           <Button variant="honey" size="lg" className="w-full sm:w-auto min-h-[52px]" asChild>
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5531993805082" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5" />
               Tirar dúvidas no WhatsApp
             </a>
