@@ -83,27 +83,6 @@ const FAQSection = () => (
           ))}
         </Accordion>
 
-        {/* CTA after FAQ */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-10 md:mt-14 text-center bg-white rounded-xl md:rounded-2xl p-6 md:p-10 shadow-lg border border-honey/20"
-        >
-          <h4 className="text-lg md:text-2xl font-display font-bold text-chocolate-dark mb-2 md:mb-3">
-            Ainda tem dúvidas?
-          </h4>
-          <p className="text-chocolate-dark/60 text-sm md:text-base mb-4 md:mb-6">
-            Fale conosco pelo WhatsApp. Respondemos rápido! 💬
-          </p>
-          <Button variant="honey" size="lg" className="w-full sm:w-auto min-h-[52px]" asChild>
-            <a href="https://wa.me/5531993805082" target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="w-5 h-5" />
-              Tirar dúvidas no WhatsApp
-            </a>
-          </Button>
-        </motion.div>
       </motion.div>
     </div>
   </section>
