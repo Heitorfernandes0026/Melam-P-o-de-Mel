@@ -64,7 +64,7 @@ const Header = () => {
           <div className="flex items-center gap-2 md:gap-3">
             {/* CTA Button */}
             <Button variant="honey" size="sm" className="text-xs md:text-sm px-3 md:px-4" asChild>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5531993805082" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4" />
                 <span className="hidden sm:inline">Pedir agora</span>
                 <span className="sm:hidden">Pedir</span>
@@ -132,7 +132,7 @@ const Header = () => {
               >
                 <Button variant="honey" size="lg" className="w-full" asChild>
                   <a
-                    href="https://wa.me/5500000000000"
+                    href="https://wa.me/5531993805082"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -240,7 +240,7 @@ const HeroSection = () => (
           className="flex flex-col gap-3 sm:flex-row sm:gap-4"
         >
           <Button variant="hero" size="xl" className="group w-full sm:w-auto min-h-[50px] text-sm md:text-base" asChild>
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5531993805082" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5" />
               Pedir agora no WhatsApp
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -481,7 +481,7 @@ const ContactSection = () => (
 
         <div className="flex flex-col gap-3 md:flex-row md:gap-4 justify-center mb-6 md:mb-10">
           <Button variant="honey" size="lg" className="w-full md:w-auto shadow-lg min-h-[52px]" asChild>
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5531993805082" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5" />
               WhatsApp
             </a>
@@ -496,7 +496,7 @@ const ContactSection = () => (
 
         <div className="flex items-center justify-center gap-2 text-chocolate-dark/50 text-xs md:text-sm bg-cream/50 px-3 py-2 rounded-full mx-auto w-fit">
           <MapPin className="w-4 h-4 text-honey" />
-          <span>Entregamos em toda a região</span>
+          <span>Retirada no local ou frete a combinar</span>
         </div>
       </motion.div>
     </div>
@@ -507,7 +507,8 @@ const Footer = () => (
   <footer className="py-6 md:py-8 bg-chocolate-dark text-cream">
     <div className="container mx-auto px-4 md:px-6 text-center">
       <h4 className="font-script text-2xl md:text-3xl text-honey mb-1.5 md:mb-2">Melamô</h4>
-      <p className="text-cream/60 text-xs md:text-sm mb-3 md:mb-4">Pão de Mel Artesanal — desde 2021</p>
+      <p className="text-cream/60 text-xs md:text-sm mb-1.5 md:mb-2">Pão de Mel Artesanal — desde 2021</p>
+      <p className="text-cream/50 text-[10px] md:text-xs mb-3 md:mb-4">Rua Alvaro Camargos Sobrinho, 230 – Bairro Floramar – BH/MG</p>
       <p className="text-[10px] md:text-xs text-cream/40">
         © 2024 Todos os direitos reservados.
       </p>
