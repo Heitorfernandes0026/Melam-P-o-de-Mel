@@ -75,7 +75,7 @@ const HowItWorksSection = () => (
                 <span className="md:hidden">{item.title}</span>
                 <span className="hidden md:inline">{item.titleFull}</span>
               </h4>
-              <p className="text-chocolate-dark/70 text-[10px] md:text-sm leading-tight md:leading-relaxed hidden sm:block">
+              <p className="text-chocolate-dark/70 text-[10px] md:text-sm leading-tight md:leading-relaxed">
                 {item.description}
               </p>
             </div>
