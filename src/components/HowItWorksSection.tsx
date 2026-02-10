@@ -21,7 +21,7 @@ const steps = [
     step: "3",
     title: "Receba",
     titleFull: "Receba com carinho",
-    description: "Produzimos e entregamos fresquinho para você"
+    description: "Retirada no local ou frete a combinar"
   }
 ];
 
