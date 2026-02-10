@@ -47,7 +47,7 @@ const CatalogSection = () => (
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-honey/10 hover:border-honey/30"
           >
-            <div className="relative overflow-hidden aspect-square">
+            <div className="relative overflow-hidden aspect-[4/3] md:aspect-square">
               <img
                 src={catalog.image}
                 alt={catalog.title}

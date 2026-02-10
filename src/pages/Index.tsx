@@ -505,11 +505,11 @@ const ContactSection = () => (
 );
 
 const Footer = () => (
-  <footer className="py-6 md:py-8 bg-chocolate-dark text-cream">
+  <footer className="py-6 md:py-8 bg-chocolate-dark text-cream pb-safe">
     <div className="container mx-auto px-4 md:px-6 text-center">
       <h4 className="font-script text-2xl md:text-3xl text-honey mb-1.5 md:mb-2">Melamô</h4>
       <p className="text-cream/60 text-xs md:text-sm mb-1.5 md:mb-2">Pão de Mel Artesanal — desde 2021</p>
-      <p className="text-cream/50 text-[10px] md:text-xs mb-3 md:mb-4">Rua Alvaro Camargos Sobrinho, 230 – Bairro Floramar – BH/MG</p>
+      <p className="text-cream/50 text-[10px] md:text-xs mb-3 md:mb-4 px-2">Rua Alvaro Camargos Sobrinho, 230 – Bairro Floramar – BH/MG</p>
       <p className="text-[10px] md:text-xs text-cream/40">
         © 2024 Todos os direitos reservados.
       </p>
