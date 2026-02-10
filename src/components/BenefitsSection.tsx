@@ -3,17 +3,12 @@ import { motion } from "framer-motion";
 const benefits = [
   {
     icon: "🍯",
-    title: "Receita artesanal",
+    title: "Produto Artesanal",
     description: "Feito à mão com amor"
   },
   {
-    icon: "🍫",
-    title: "Chocolate premium",
-    description: "Alta qualidade"
-  },
-  {
     icon: "🎁",
-    title: "Embalagem especial",
+    title: "Embalagem Personalizada",
     description: "Ideal para presente"
   },
   {
@@ -48,7 +43,7 @@ const BenefitsSection = () => (
       </motion.div>
 
       {/* Mobile: horizontal scroll, Desktop: grid */}
-      <div className="flex md:grid md:grid-cols-5 gap-3 md:gap-6 overflow-x-auto md:overflow-visible pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 snap-x snap-mandatory md:snap-none scrollbar-hide">
+      <div className="flex md:grid md:grid-cols-4 gap-3 md:gap-6 overflow-x-auto md:overflow-visible pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 snap-x snap-mandatory md:snap-none scrollbar-hide">
         {benefits.map((benefit, index) => (
           <motion.div
             key={benefit.title}
