@@ -23,15 +23,15 @@ const faqs = [
   },
   {
     question: "Vocês fazem entrega?",
-    answer: "Sim! Entregamos em toda a região. Frete grátis para pedidos acima de R$ 150 em algumas áreas."
+    answer: "Trabalhamos com Retirada no local ou frete a combinar."
   },
   {
     question: "Quanto tempo dura o pão de mel?",
-    answer: "Validade de 30 dias em local fresco e seco, fora da geladeira. A embalagem individual mantém a qualidade."
+    answer: "7 dias em temperatura ambiente, 15 dias em geladeira e 90 dias congelado, lembrando que nossos pãezinhos não possuem conservantes."
   },
   {
     question: "Fazem brindes corporativos?",
-    answer: "Sim! Embalagens personalizadas com logo da empresa, cartões especiais e condições para grandes quantidades."
+    answer: "Sim! Embalagens personalizadas com logo da empresa, cores, adesivos/tags especiais e condições para grandes quantidades."
   }
 ];
 
