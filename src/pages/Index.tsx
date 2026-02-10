@@ -275,39 +275,33 @@ const HeroSection = () => (
 
 const products = [
   {
-    name: "Clássico Doce de Leite",
-    description: "Recheio cremoso de doce de leite argentino coberto com chocolate ao leite",
-    price: "R$ 9,00",
+    name: "Pão de Mel – Tamanho Tradicional",
+    description: "Massa perfeita, fofinha e úmida, recheio na medida e casquinha crocante de chocolate meio amargo.",
     image: produtoDoceLeite,
   },
   {
-    name: "Vulcão de Caramelo",
-    description: "Caramelo cremoso que derrete na boca, com cobertura de chocolate meio amargo",
-    price: "R$ 12,00",
+    name: "Minizinhos",
+    description: "Tamanho ideal para lembrancinhas e eventos",
     image: produtoVulcao,
   },
   {
-    name: "Torre de Mel",
-    description: "Degustação com 5 sabores diferentes — perfeito para compartilhar",
-    price: "R$ 45,00",
+    name: "Pão de Mel no Pote",
+    description: "Explosão de sabores, massa do nosso pão de mel bem molhadinha intercalando com camadas de doce",
     image: produtoTorreMel,
   },
   {
-    name: "Pão de Mel Clássico",
-    description: "Receita original com chocolate ao leite e recheio cremoso de ninho",
-    price: "R$ 8,00",
+    name: "Opções Presenteáveis",
+    description: "Caixas personalizadas, saquinhos em algodão e mais.",
     image: produtoClassico,
   },
   {
-    name: "Kit Presente",
-    description: "5 unidades em embalagem especial — ideal para presentear",
-    price: "R$ 55,00",
+    name: "Sobremesa para Compartilhar",
+    description: "Semelhante ao nosso pão de mel no pote, porém em tamanho família",
     image: produtoKitPresente,
   },
   {
-    name: "Trifle de Pão de Mel",
-    description: "Sobremesa em taça com camadas de pão de mel, creme e frutas",
-    price: "R$ 89,00",
+    name: "Bolos Festivos",
+    description: "Feitos com a massa perfeita de nosso pão de mel e recheios selecionados.",
     image: produtoTrifle,
   },
 ];
@@ -329,13 +323,13 @@ const ProductsSection = () => (
         className="text-center mb-10 md:mb-16"
       >
         <span className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-honey/15 text-chocolate-dark rounded-full text-xs md:text-sm font-medium mb-3 md:mb-4 border border-honey/20">
-          🍯 Nossos sabores
+          🍯 Nossas opções
         </span>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-chocolate-dark mb-3 md:mb-4">
           Escolha seus <span className="text-gradient-honey">favoritos</span>
         </h2>
         <p className="text-chocolate-dark/60 text-sm md:text-base max-w-xl mx-auto px-2">
-          Cada pão de mel é preparado com ingredientes premium e muito carinho
+          Cada pão de mel é preparado artesanalmente e com muito carinho
         </p>
       </motion.div>
 
@@ -363,30 +357,11 @@ const ProductsSection = () => (
             <div className="p-4 md:p-6 bg-white">
               <h3 className="text-base md:text-lg font-display font-semibold text-chocolate-dark mb-1.5 md:mb-2">{product.name}</h3>
               <p className="text-chocolate-dark/60 text-xs md:text-sm mb-3 md:mb-4 line-clamp-2">{product.description}</p>
-              <div className="flex items-center justify-between">
-                <span className="text-lg md:text-xl font-bold text-gradient-honey">{product.price}</span>
-                <span className="text-[10px] md:text-xs text-chocolate-dark/40 bg-cream px-2 py-1 rounded-full">unidade</span>
-              </div>
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* CTA secundário - full width on mobile */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center mt-10 md:mt-14"
-      >
-        <Button variant="chocolate" size="lg" className="w-full sm:w-auto shadow-lg min-h-[52px]" asChild>
-          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
-            <MessageCircle className="w-5 h-5" />
-            Ver todos os sabores e preços
-          </a>
-        </Button>
-      </motion.div>
     </div>
   </section>
 );
