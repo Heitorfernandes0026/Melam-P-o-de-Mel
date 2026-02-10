@@ -216,6 +216,18 @@
 html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Safe area insets for notched devices */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Bottom safe area for fixed elements */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Mobile viewport height fix */
