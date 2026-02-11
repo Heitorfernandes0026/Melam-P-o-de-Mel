@@ -2,22 +2,15 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import historia1 from "@/assets/historia-1.png";
-import historia2 from "@/assets/historia-2.png";
-import historia3 from "@/assets/historia-3.png";
-import historia4 from "@/assets/historia-4.png";
-import historia5 from "@/assets/historia-5.png";
-import historia6 from "@/assets/historia-6.png";
-import historia7 from "@/assets/historia-7.png";
-
 const slides = [
-  { image: historia1, alt: "Melamô - Proprietária com mel" },
-  { image: historia2, alt: "2021 - O início da jornada" },
-  { image: historia3, alt: "2022 - Crescimento no Instagram" },
-  { image: historia4, alt: "2023 - Nova identidade visual" },
-  { image: historia5, alt: "2024 - Grandes campanhas" },
-  { image: historia6, alt: "2025 - Casinha Melamô" },
-  { image: historia7, alt: "4 anos de Melamô" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774350022_b4e3fa06.JPG", alt: "Melamô - Foto 1" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774355307_7e93d4a4.jpg", alt: "Melamô - Foto 2" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774355664_7860c862.JPG", alt: "Melamô - Foto 3" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774356230_3cccb138.jpg", alt: "Melamô - Foto 4" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774356588_065a917f.JPG", alt: "Melamô - Foto 5" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774356914_cf4d1ff0.JPG", alt: "Melamô - Foto 6" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774357326_00e14346.JPG", alt: "Melamô - Foto 7" },
+  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774357765_582ddaa6.jpg", alt: "Melamô - Foto 8" },
 ];
 
 const HistoryCarousel = () => {
