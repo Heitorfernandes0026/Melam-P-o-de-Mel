@@ -9,6 +9,8 @@ const FinalCTASection = () => (
     <img
       src={ctaBackground}
       alt=""
+      loading="lazy"
+      decoding="async"
       className="absolute inset-0 w-full h-full object-cover"
     />
     <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/70 via-chocolate-dark/50 to-chocolate-dark/30" />

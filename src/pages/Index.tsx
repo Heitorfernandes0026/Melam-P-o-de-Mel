@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Instagram, MessageCircle, MapPin, Clock, Heart, ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import HistoryCarousel from "@/components/HistoryCarousel";
 import BenefitsSection from "@/components/BenefitsSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import FinalCTASection from "@/components/FinalCTASection";
-import FAQSection from "@/components/FAQSection";
-import CatalogSection from "@/components/CatalogSection";
+
+// Lazy load below-fold components for faster initial load
+const HistoryCarousel = lazy(() => import("@/components/HistoryCarousel"));
+const HowItWorksSection = lazy(() => import("@/components/HowItWorksSection"));
+const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
+const FinalCTASection = lazy(() => import("@/components/FinalCTASection"));
+const FAQSection = lazy(() => import("@/components/FAQSection"));
+const CatalogSection = lazy(() => import("@/components/CatalogSection"));
 import heroVideo from "@/assets/hero-video.mp4";
 import logoMelamo from "@/assets/logo-melamo.png";
 import historiaBackground from "@/assets/historia-background.jpg";
@@ -172,6 +174,7 @@ const HeroSection = () => (
       muted
       loop
       playsInline
+      preload="metadata"
       className="absolute inset-0 w-full h-full object-cover"
     >
       <source src={heroVideo} type="video/mp4" />
@@ -207,6 +210,8 @@ const HeroSection = () => (
             <img
               src={logoMelamo}
               alt="Melamô"
+              fetchPriority="high"
+              decoding="async"
               className="h-28 md:h-44 lg:h-52 w-auto object-contain object-bottom"
             />
           </div>
@@ -351,6 +356,7 @@ const ProductsSection = () => (
                 src={product.image}
                 alt={product.name}
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               {/* Subtle overlay on hover */}
@@ -525,13 +531,15 @@ const Index = () => {
       <HeroSection />
       <BenefitsSection />
       <ProductsSection />
-      <CatalogSection />
-      <HowItWorksSection />
-      <HistorySection />
-      <TestimonialsSection />
-      <FinalCTASection />
-      <FAQSection />
-      <ContactSection />
+      <Suspense fallback={<div className="py-24" />}>
+        <CatalogSection />
+        <HowItWorksSection />
+        <HistorySection />
+        <TestimonialsSection />
+        <FinalCTASection />
+        <FAQSection />
+        <ContactSection />
+      </Suspense>
       <Footer />
     </div>
   );
