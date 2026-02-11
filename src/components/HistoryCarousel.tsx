@@ -2,15 +2,24 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import historia1 from "@/assets/historia-1.png";
+import historia2 from "@/assets/historia-2.png";
+import historia3 from "@/assets/historia-3.png";
+import historia4 from "@/assets/historia-4.png";
+import historia5 from "@/assets/historia-5.png";
+import historia6 from "@/assets/historia-6.png";
+import historia7 from "@/assets/historia-7.png";
+import historia8 from "@/assets/historia-8.png";
+
 const slides = [
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774350022_b4e3fa06.JPG", alt: "Melamô - Foto 1" },
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774355307_7e93d4a4.jpg", alt: "Melamô - Foto 2" },
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774355664_7860c862.JPG", alt: "Melamô - Foto 3" },
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774356230_3cccb138.jpg", alt: "Melamô - Foto 4" },
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774356588_065a917f.JPG", alt: "Melamô - Foto 5" },
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774356914_cf4d1ff0.JPG", alt: "Melamô - Foto 6" },
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774357326_00e14346.JPG", alt: "Melamô - Foto 7" },
-  { image: "https://tgprvcodlwyfxjbxirgh.supabase.co/storage/v1/object/public/lovable-uploads/lovable_1770774357765_582ddaa6.jpg", alt: "Melamô - Foto 8" },
+  { image: historia1, alt: "Melamô - Pão de mel com amor" },
+  { image: historia2, alt: "Melamô - Mel puro" },
+  { image: historia3, alt: "Melamô - Sacola personalizada" },
+  { image: historia4, alt: "Melamô - Ovo de Páscoa" },
+  { image: historia5, alt: "Melamô - Panetone artesanal" },
+  { image: historia6, alt: "Melamô - Caixas de pão de mel" },
+  { image: historia7, alt: "Melamô - Embalagens para presente" },
+  { image: historia8, alt: "Melamô - Casinha Melamô" },
 ];
 
 const HistoryCarousel = () => {
