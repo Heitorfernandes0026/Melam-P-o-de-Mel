@@ -67,9 +67,9 @@ const HistoryCarousel = () => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative max-w-md mx-auto">
       {/* Main carousel */}
-      <div className="relative h-[500px] md:h-[650px] rounded-2xl overflow-hidden bg-cream/10">
+      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-cream/10">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={currentIndex}
@@ -87,7 +87,7 @@ const HistoryCarousel = () => {
             <img
               src={slides[currentIndex].image}
               alt={slides[currentIndex].alt}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/40 via-transparent to-transparent" />
           </motion.div>
