@@ -9,13 +9,13 @@ const catalogs = [
     title: "Catálogo Corporativo",
     image: catalogoCorporativo,
     buttonLabel: "Ver Catálogo Corporativo",
-    href: "/catalogo/corporativo",
+    href: "/catalogos/catalogo-corporativo.pdf",
   },
   {
     title: "Catálogo Tradicional",
     image: catalogoTradicional,
     buttonLabel: "Ver Catálogo Tradicional",
-    href: "/catalogo/tradicional",
+    href: "/catalogos/catalogo-tradicional.pdf",
   },
 ];
 
@@ -61,7 +61,7 @@ const CatalogSection = () => (
                 {catalog.title}
               </h3>
               <Button variant="honey" size="lg" className="w-full group/btn" asChild>
-                <a href={catalog.href}>
+                <a href={catalog.href} target="_blank" rel="noopener noreferrer">
                   {catalog.buttonLabel}
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                 </a>
