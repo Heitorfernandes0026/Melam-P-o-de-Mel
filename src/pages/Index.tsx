@@ -174,8 +174,10 @@ const HeroSection = () => (
       muted
       loop
       playsInline
-      preload="metadata"
+      preload="none"
+      poster=""
       className="absolute inset-0 w-full h-full object-cover"
+      style={{ contentVisibility: 'auto' as any }}
     >
       <source src={heroVideo} type="video/mp4" />
     </video>
@@ -532,13 +534,27 @@ const Index = () => {
       <BenefitsSection />
       <ProductsSection />
       <Suspense fallback={<div className="py-24" />}>
-        <CatalogSection />
-        <HowItWorksSection />
-        <HistorySection />
-        <TestimonialsSection />
-        <FinalCTASection />
-        <FAQSection />
-        <ContactSection />
+        <div className="content-auto">
+          <CatalogSection />
+        </div>
+        <div className="content-auto">
+          <HowItWorksSection />
+        </div>
+        <div className="content-auto">
+          <HistorySection />
+        </div>
+        <div className="content-auto">
+          <TestimonialsSection />
+        </div>
+        <div className="content-auto">
+          <FinalCTASection />
+        </div>
+        <div className="content-auto">
+          <FAQSection />
+        </div>
+        <div className="content-auto">
+          <ContactSection />
+        </div>
       </Suspense>
       <Footer />
     </div>
