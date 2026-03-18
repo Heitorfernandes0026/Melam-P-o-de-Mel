@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import catalogoCorporativo from "@/assets/catalogo-corporativo.png";
 import catalogoTradicional from "@/assets/catalogo-tradicional.png";
+import catalogoPascoa from "@/assets/catalogo-pascoa.jpg";
 
 const catalogs = [
   {
@@ -16,6 +17,12 @@ const catalogs = [
     image: catalogoTradicional,
     buttonLabel: "Ver Catálogo Tradicional",
     href: "/catalogos/catalogo-tradicional.pdf",
+  },
+  {
+    title: "Catálogo de Páscoa",
+    image: catalogoPascoa,
+    buttonLabel: "Ver Catálogo de Páscoa",
+    href: "/catalogos/catalogo-pascoa-2026.pdf",
   },
 ];
 
