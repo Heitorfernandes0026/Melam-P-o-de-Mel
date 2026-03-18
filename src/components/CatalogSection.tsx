@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import catalogoCorporativo from "@/assets/catalogo-corporativo.png";
 import catalogoTradicional from "@/assets/catalogo-tradicional.png";
+import catalogoPascoa from "@/assets/catalogo-pascoa.jpg";
 
 const catalogs = [
   {
@@ -16,6 +17,12 @@ const catalogs = [
     image: catalogoTradicional,
     buttonLabel: "Ver Catálogo Tradicional",
     href: "/catalogos/catalogo-tradicional.pdf",
+  },
+  {
+    title: "Catálogo de Páscoa",
+    image: catalogoPascoa,
+    buttonLabel: "Ver Catálogo de Páscoa",
+    href: "/catalogos/catalogo-pascoa-2026.pdf",
   },
 ];
 
@@ -37,7 +44,7 @@ const CatalogSection = () => (
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 max-w-5xl mx-auto">
         {catalogs.map((catalog, index) => (
           <motion.div
             key={catalog.title}
