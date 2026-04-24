@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import catalogoCorporativo from "@/assets/catalogo-corporativo.png";
 import catalogoTradicional from "@/assets/catalogo-tradicional.png";
-import catalogoPascoa from "@/assets/catalogo-pascoa.jpg";
+import catalogoDiaDasMaes from "@/assets/catalogo-dia-das-maes.jpg";
 
 const catalogs = [
   {
@@ -19,10 +19,10 @@ const catalogs = [
     href: "/catalogos/catalogo-tradicional.pdf",
   },
   {
-    title: "Catálogo de Páscoa",
-    image: catalogoPascoa,
-    buttonLabel: "Ver Catálogo de Páscoa",
-    href: "/catalogos/catalogo-pascoa-2026.pdf",
+    title: "Catálogo Dia das Mães",
+    image: catalogoDiaDasMaes,
+    buttonLabel: "Ver Catálogo Dia das Mães",
+    href: "/catalogos/catalogo-dia-das-maes-2026.pdf",
   },
 ];
 
